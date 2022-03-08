@@ -1,6 +1,5 @@
 package zn.game.demoncrawler;
 
-
 import zn.game.demoncrawler.entities.Player;
 import zn.game.demoncrawler.listeners.Keys;
 import zn.game.demoncrawler.ui.Hud;
@@ -10,15 +9,16 @@ import java.awt.*;
 
 public class Display extends JPanel {
 
-    static Graphics2D g = null;
-    static int fps = 0;
-    static JFrame frame;
+    private Graphics2D g = null;
+    private int fps = 0;
+    private static JFrame frame;
     private static Display ui;
+    
     public Player player;
-    boolean hasStarted = false;
-    boolean paused = false;
+    private boolean hasStarted = false;
+    private boolean paused = false;
 
-    Hud hud;
+    private Hud hud;
 
     public static void main(String[] args) {
         frame = new JFrame("Dungeon Crawler");
@@ -58,7 +58,7 @@ public class Display extends JPanel {
         //fps counter for le fun
 
         if (player == null) return;
-        player.paint(gs);
+            player.paint(gs);
     }
 
     public void pause() {
