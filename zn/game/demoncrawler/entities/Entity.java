@@ -23,8 +23,8 @@ public class Entity {
         this.xp = xp;
         width = 25;
         height = 25;
-        this.x = ThreadLocalRandom.current().nextInt(0, 300 - width);
-        this.y = ThreadLocalRandom.current().nextInt(0, 300 - height);
+        this.x = ThreadLocalRandom.current().nextInt(0, 800 - width);
+        this.y = ThreadLocalRandom.current().nextInt(0, 800 - height);
 
     }
 
