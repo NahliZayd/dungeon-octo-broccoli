@@ -63,8 +63,8 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       make bootstrap
-       make release
+       --language=java --command='mvn clean install -DskipTests
+       
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
